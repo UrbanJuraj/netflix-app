@@ -3,18 +3,12 @@ import "bootstrap/dist/css/bootstrap.min.css";
 
 import styles from "./HomePage.module.css";
 import img from "../../assets/introduction-img.jpg";
+import SearchForm from "./SearchForm";
 
 const HomePage = (props) => {
-  const submitFormHandler = (event) => {
-    event.preventDefault();
-  };
-
   return (
-    <div className={styles.home}>
-      <form onSubmit={submitFormHandler}>
-        <input type="text" placeholder="Search film" />
-        <button type="submit">Search</button>
-      </form>
+    <section className={styles.home}>
+      <SearchForm />
 
       <div className={styles.carousel}>
         <Carousel>
@@ -40,7 +34,7 @@ const HomePage = (props) => {
           </Carousel.Item>
         </Carousel>
       </div>
-    </div>
+    </section>
   );
 };
 

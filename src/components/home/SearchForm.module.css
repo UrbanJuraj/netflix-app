@@ -1,0 +1,18 @@
+.form {
+  display: flex;
+}
+
+.form input {
+  font-size: 2.4rem;
+  padding: 0.6rem;
+  border: none;
+}
+
+.form button {
+  background-color: red;
+  color: #fff;
+  border: none;
+  padding: 1rem;
+  font-size: 2.4rem;
+  cursor: pointer;
+}
