@@ -1,0 +1,45 @@
+.login-form {
+  padding: 6rem;
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 5px;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  width: 40rem;
+}
+
+.login-form h2 {
+  font-size: 4.4rem;
+}
+
+.login-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+
+.login-form form div {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.login-form form input {
+  font-size: 2rem;
+  border: none;
+  padding: 0.8rem;
+  border-radius: 5px;
+}
+
+.login-form form button {
+  background-color: red;
+  color: #fff;
+  border: none;
+  padding: 0.75rem 3.5rem;
+  cursor: pointer;
+  font-size: 2rem;
+  border-radius: 5px;
+  transition: all 0.3s;
+  font-weight: 600;
+}
