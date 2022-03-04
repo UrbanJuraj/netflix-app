@@ -3,8 +3,8 @@ import "bootstrap/dist/css/bootstrap.min.css";
 
 import styles from "./HomePage.module.css";
 import img from "../../assets/introduction-img.jpg";
-import SearchForm from "./SearchForm";
-import Card from "../UI/Card";
+import SearchForm from "../../components/home/SearchForm";
+import Card from "../../components/UI/Card";
 
 const HomePage = (props) => {
   return (

@@ -1,6 +1,6 @@
-import Button from "../UI/button/Button";
-import Card from "../UI/Card";
-import Input from "../UI/input/Input";
+import Button from "../../components/UI/button/Button";
+import Card from "../../components/UI/Card";
+import Input from "../../components/UI/input/Input";
 import styles from "./LoginPage.module.css";
 
 const LoginPage = (props) => {
