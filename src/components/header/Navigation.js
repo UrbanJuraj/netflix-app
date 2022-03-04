@@ -7,6 +7,9 @@ const Navigation = (props) => {
         <li>
           <button>Sign in</button>
         </li>
+        <li>
+          <button>Logout</button>
+        </li>
       </ul>
     </nav>
   );
