@@ -1,3 +1,4 @@
+import Input from "../UI/input/Input";
 import styles from "./SearchForm.module.css";
 
 const SearchForm = (props) => {
@@ -7,7 +8,7 @@ const SearchForm = (props) => {
 
   return (
     <form onSubmit={submitFormHandler} className={styles.form}>
-      <input type="text" placeholder="Search film" />
+      <Input type="text" placeholder="Search film" />
       <button type="submit">Search</button>
     </form>
   );

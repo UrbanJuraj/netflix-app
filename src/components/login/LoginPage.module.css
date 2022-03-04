@@ -25,13 +25,6 @@
   gap: 2rem;
 }
 
-.login-form form input {
-  font-size: 2rem;
-  border: none;
-  padding: 0.8rem;
-  border-radius: 5px;
-}
-
 .login-form form button {
   background-color: red;
   color: #fff;
