@@ -1,3 +1,4 @@
+import Button from "../UI/button/Button";
 import Card from "../UI/Card";
 import Input from "../UI/input/Input";
 import styles from "./LoginPage.module.css";
@@ -16,7 +17,7 @@ const LoginPage = (props) => {
             <Input type="email" placeholder="Email" />
             <Input type="text" placeholder="Password" />
           </div>
-          <button>Sign in</button>
+          <Button title="Sign in" />
         </form>
       </div>
     </Card>

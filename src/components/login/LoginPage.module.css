@@ -24,15 +24,3 @@
   flex-direction: column;
   gap: 2rem;
 }
-
-.login-form form button {
-  background-color: red;
-  color: #fff;
-  border: none;
-  padding: 0.75rem 3.5rem;
-  cursor: pointer;
-  font-size: 2rem;
-  border-radius: 5px;
-  transition: all 0.3s;
-  font-weight: 600;
-}

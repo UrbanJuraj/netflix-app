@@ -1,3 +1,4 @@
+import Button from "../UI/button/Button";
 import styles from "./Navigation.module.css";
 
 const Navigation = (props) => {
@@ -5,10 +6,10 @@ const Navigation = (props) => {
     <nav className={styles.nav}>
       <ul>
         <li>
-          <button>Sign in</button>
+          <Button title="Sign in" />
         </li>
         <li>
-          <button>Logout</button>
+          <Button title="Logout" />
         </li>
       </ul>
     </nav>
