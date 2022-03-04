@@ -1,4 +1,8 @@
+import Carousel from "react-bootstrap/Carousel";
+import "bootstrap/dist/css/bootstrap.min.css";
+
 import styles from "./HomePage.module.css";
+import img from "../../assets/introduction-img.jpg";
 
 const HomePage = (props) => {
   const submitFormHandler = (event) => {
@@ -11,6 +15,31 @@ const HomePage = (props) => {
         <input type="text" placeholder="Search film" />
         <button type="submit">Search</button>
       </form>
+
+      <div className={styles.carousel}>
+        <Carousel>
+          <Carousel.Item>
+            <img src={img} alt="wedw" />
+            <Carousel.Caption>
+              <p>carousel</p>
+            </Carousel.Caption>
+          </Carousel.Item>
+
+          <Carousel.Item>
+            <img src={img} alt="wdwd" />
+            <Carousel.Caption>
+              <p>carousel</p>
+            </Carousel.Caption>
+          </Carousel.Item>
+
+          <Carousel.Item>
+            <img src={img} alt="wedw" />
+            <Carousel.Caption>
+              <p>carousel</p>
+            </Carousel.Caption>
+          </Carousel.Item>
+        </Carousel>
+      </div>
     </div>
   );
 };
