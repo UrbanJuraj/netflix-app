@@ -1,19 +1,3 @@
-.introduction {
-  background-image: linear-gradient(
-      to bottom,
-      rgba(0, 0, 0, 0.8),
-      rgba(0, 0, 0, 0.6)
-    ),
-    url("../../assets/introduction-img.jpg");
-  background-size: cover;
-  background-position: center;
-  width: 100%;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 .container {
   max-width: 80rem;
   margin: 0 auto;
@@ -21,6 +5,7 @@
   flex-direction: column;
   gap: 2rem;
   text-align: center;
+  color: #fff;
 }
 
 .container h1 {
