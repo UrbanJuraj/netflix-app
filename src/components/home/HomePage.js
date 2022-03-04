@@ -9,31 +9,33 @@ import Card from "../UI/Card";
 const HomePage = (props) => {
   return (
     <Card>
-      <SearchForm />
+      <div className={styles.gap}>
+        <SearchForm />
 
-      <div className={styles.carousel}>
-        <Carousel>
-          <Carousel.Item>
-            <img src={img} alt="wedw" />
-            <Carousel.Caption>
-              <p>carousel</p>
-            </Carousel.Caption>
-          </Carousel.Item>
+        <div className={styles.carousel}>
+          <Carousel>
+            <Carousel.Item>
+              <img src={img} alt="wedw" />
+              <Carousel.Caption>
+                <p>carousel</p>
+              </Carousel.Caption>
+            </Carousel.Item>
 
-          <Carousel.Item>
-            <img src={img} alt="wdwd" />
-            <Carousel.Caption>
-              <p>carousel</p>
-            </Carousel.Caption>
-          </Carousel.Item>
+            <Carousel.Item>
+              <img src={img} alt="wdwd" />
+              <Carousel.Caption>
+                <p>carousel</p>
+              </Carousel.Caption>
+            </Carousel.Item>
 
-          <Carousel.Item>
-            <img src={img} alt="wedw" />
-            <Carousel.Caption>
-              <p>carousel</p>
-            </Carousel.Caption>
-          </Carousel.Item>
-        </Carousel>
+            <Carousel.Item>
+              <img src={img} alt="wedw" />
+              <Carousel.Caption>
+                <p>carousel</p>
+              </Carousel.Caption>
+            </Carousel.Item>
+          </Carousel>
+        </div>
       </div>
     </Card>
   );
