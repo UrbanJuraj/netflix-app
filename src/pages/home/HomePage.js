@@ -1,5 +1,4 @@
-import Carousel from "react-bootstrap/Carousel";
-import "bootstrap/dist/css/bootstrap.min.css";
+import { Carousel } from "react-bootstrap";
 
 import styles from "./HomePage.module.css";
 import img from "../../assets/introduction-img.jpg";
