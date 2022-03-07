@@ -20,8 +20,9 @@ const Header = (props) => {
       <Link
         to={authContext.isLoggedIn ? "/home" : "/"}
         onClick={onClickHandler}
+        className={styles.logo}
       >
-        <h1>Netflix</h1>
+        Netflix
       </Link>
       <Navigation />
     </header>

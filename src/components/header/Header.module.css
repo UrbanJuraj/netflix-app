@@ -11,7 +11,7 @@
   padding: 0 4rem;
 }
 
-.main-header h1 {
+.logo {
   font-weight: 700;
   text-transform: uppercase;
   font-size: 4.4rem;
@@ -19,4 +19,10 @@
   letter-spacing: -0.5px;
   color: red;
   margin: 0;
+  text-decoration: none;
+}
+
+.logo:hover,
+.logo:active {
+  color: red;
 }
