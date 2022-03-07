@@ -29,7 +29,7 @@ const LoginPage = (props) => {
       enteredEmail.match(validEmailExpression) &&
       enteredPassword.length > 7
     ) {
-      authContext.login(90000);
+      authContext.login();
       navigate("/home");
     } else console.log("chujovina");
   };
