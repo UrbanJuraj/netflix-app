@@ -7,13 +7,16 @@ import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import { AuthContextProvider } from "./store/auth-context";
+import { MoviesContextProvider } from "./store/movies-context";
 
 ReactDOM.render(
   <React.StrictMode>
     <AuthContextProvider>
-      <BrowserRouter>
-        <App />
-      </BrowserRouter>
+      <MoviesContextProvider>
+        <BrowserRouter>
+          <App />
+        </BrowserRouter>
+      </MoviesContextProvider>
     </AuthContextProvider>
   </React.StrictMode>,
   document.getElementById("root")
