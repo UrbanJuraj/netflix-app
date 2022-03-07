@@ -7,9 +7,12 @@ import LoginPage from "./pages/login/LoginPage";
 import Introduction from "./pages/introduction/Introduction";
 import NotFound from "./pages/notFound/NotFound";
 import AuthContext from "./store/auth-context";
+import MoviePage from "./pages/movie/MoviePage";
+import MoviesContext from "./store/movies-context";
 
 function App() {
   const authContext = useContext(AuthContext);
+  const moviesContext = useContext(MoviesContext);
 
   return (
     <Fragment>
@@ -29,6 +32,18 @@ function App() {
             )
           }
         />
+        {authContext.isLoggedIn && (
+          <Route
+            path="movie"
+            element={
+              moviesContext.isSearched ? (
+                <MoviePage movie={moviesContext.movie} />
+              ) : (
+                <NotFound />
+              )
+            }
+          />
+        )}
         <Route path="*" element={<NotFound />} />
       </Routes>
     </Fragment>
