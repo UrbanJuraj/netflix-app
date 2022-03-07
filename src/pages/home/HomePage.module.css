@@ -14,3 +14,9 @@
 .carousel img {
   width: 100rem;
 }
+
+.carousel h1 {
+  font-size: 6.2rem;
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 10px;
+}
