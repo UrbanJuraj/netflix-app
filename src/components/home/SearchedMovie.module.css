@@ -1,0 +1,11 @@
+.searched-movie {
+  width: 100rem;
+  border-radius: 5px;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 1rem 0 1rem 2rem;
+  cursor: pointer;
+}
+
+.searched-movie h2 {
+  font-size: 2rem;
+}
