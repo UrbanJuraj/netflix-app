@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import { Carousel } from "react-bootstrap";
 
 import SearchForm from "../../components/home/SearchForm";
@@ -6,9 +6,17 @@ import Card from "../../components/UI/Card";
 import notFoundImg from "../../assets/not-found.png";
 
 import styles from "./HomePage.module.css";
+import MoviesContext from "../../store/movies-context";
+import SearchedMovie from "../../components/home/SearchedMovie";
+import { useNavigate } from "react-router-dom";
 
 const HomePage = (props) => {
   const [movies, setMovies] = useState([]);
+  const [movie, setMovie] = useState({});
+
+  const moviesContext = useContext(MoviesContext);
+
+  const navigate = useNavigate();
 
   const randomPageNumber = Math.floor(Math.random() * 100) + 1;
 
@@ -42,6 +50,14 @@ const HomePage = (props) => {
     <Card>
       <div className={styles.gap}>
         <SearchForm />
+
+        {moviesContext.isSearched && (
+          <div className={styles["searched-movies"]}>
+            {moviesContext.movies.map((movie) => (
+              <SearchedMovie key={movie.id} movie={movie} />
+            ))}
+          </div>
+        )}
 
         <div className={styles.carousel}>
           <Carousel>
