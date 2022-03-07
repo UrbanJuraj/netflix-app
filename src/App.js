@@ -1,20 +1,34 @@
-import { Fragment } from "react";
-import { Routes, Route } from "react-router-dom";
+import { Fragment, useContext } from "react";
+import { Routes, Route, Navigate } from "react-router-dom";
 
 import Header from "./components/header/Header";
 import HomePage from "./pages/home/HomePage";
 import LoginPage from "./pages/login/LoginPage";
 import Introduction from "./pages/introduction/Introduction";
 import NotFound from "./pages/notFound/NotFound";
+import AuthContext from "./store/auth-context";
 
 function App() {
+  const authContext = useContext(AuthContext);
+
   return (
     <Fragment>
       <Header />
       <Routes>
         <Route path="/" element={<Introduction />} />
-        <Route path="home" element={<HomePage />} />
-        <Route path="login" element={<LoginPage />} />
+        {!authContext.isLoggedIn && (
+          <Route path="login" element={<LoginPage />} />
+        )}
+        <Route
+          path="home"
+          element={
+            !authContext.isLoggedIn ? (
+              <Navigate to="/login" replace />
+            ) : (
+              <HomePage />
+            )
+          }
+        />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </Fragment>
