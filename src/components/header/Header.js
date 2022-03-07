@@ -5,13 +5,22 @@ import AuthContext from "../../store/auth-context";
 import Navigation from "./Navigation";
 
 import styles from "./Header.module.css";
+import MoviesContext from "../../store/movies-context";
 
 const Header = (props) => {
   const authContext = useContext(AuthContext);
+  const moviesContext = useContext(MoviesContext);
+
+  const onClickHandler = () => {
+    moviesContext.clearMovies();
+  };
 
   return (
     <header className={styles["main-header"]}>
-      <Link to={authContext.isLoggedIn ? "/home" : "/"}>
+      <Link
+        to={authContext.isLoggedIn ? "/home" : "/"}
+        onClick={onClickHandler}
+      >
         <h1>Netflix</h1>
       </Link>
       <Navigation />
