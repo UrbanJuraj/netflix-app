@@ -2,7 +2,7 @@ import React, { useState } from "react";
 
 const MoviesContext = React.createContext({
   movies: [],
-  addMovies: (movies) => {},
+  addSearchedMovies: (movies) => {},
   movie: {},
   setMovie: (movie) => {},
   clearMovies: () => {},
@@ -14,7 +14,7 @@ export const MoviesContextProvider = (props) => {
   const [movies, setMovies] = useState([]);
   const [movie, setMovie] = useState({});
 
-  const addMoviesHandler = (movies) => {
+  const addSearchedMoviesHandler = (movies) => {
     setIsSearched(true);
     setMovies(movies);
   };
@@ -27,11 +27,11 @@ export const MoviesContextProvider = (props) => {
     setIsSearched(false);
     setMovies([]);
     setMovie({});
-  }
+  };
 
   const contextValue = {
     movies,
-    addMovies: addMoviesHandler,
+    addSearchedMovies: addSearchedMoviesHandler,
     movie,
     setMovie: setChosenMovie,
     clearMovies: clearSearchedMovies,
