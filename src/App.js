@@ -17,8 +17,18 @@ function App() {
   return (
     <Fragment>
       <Header />
+
       <Routes>
-        <Route path="/" element={<Introduction />} />
+        <Route
+          path="/"
+          element={
+            authContext.isLoggedIn ? (
+              <Navigate to="/home" replace />
+            ) : (
+              <Introduction />
+            )
+          }
+        />
         {!authContext.isLoggedIn && (
           <Route path="login" element={<LoginPage />} />
         )}
