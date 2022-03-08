@@ -11,8 +11,10 @@ import SearchedMovie from "../../components/home/SearchedMovie";
 import { useNavigate } from "react-router-dom";
 
 const HomePage = (props) => {
+  const [isLoading, setIsLoading] = useState(true);
+  const [error, setError] = useState();
   const [movies, setMovies] = useState([]);
-  const [movie, setMovie] = useState({});
+  // const [movie, setMovie] = useState({});
 
   const moviesContext = useContext(MoviesContext);
 
@@ -25,6 +27,11 @@ const HomePage = (props) => {
   useEffect(() => {
     const fetchData = async () => {
       const response = await fetch(url);
+
+      if (!response.ok) {
+        throw new Error("Something went wrong!");
+      }
+
       const resData = await response.json();
 
       let loadedMovies = [];
@@ -32,17 +39,36 @@ const HomePage = (props) => {
       resData.results.map((movie) =>
         loadedMovies.push({
           key: movie.id,
-          id: movie.id,
           title: movie.title,
           image: movie.backdrop_path,
         })
       );
 
       setMovies(loadedMovies);
+      setIsLoading(false);
     };
 
-    fetchData();
+    fetchData().catch((error) => {
+      setIsLoading(false);
+      setError(error.message);
+    });
   }, []);
+
+  if (isLoading) {
+    return (
+      <Card>
+        <p className={styles["loading-movies"]}>Loading...</p>
+      </Card>
+    );
+  }
+
+  if (error) {
+    return (
+      <Card>
+        <p className={styles.error}>{error}</p>
+      </Card>
+    );
+  }
 
   const imgHttp = `https://image.tmdb.org/t/p/original`;
 

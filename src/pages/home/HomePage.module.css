@@ -1,3 +1,17 @@
+.loading-movies {
+  font-size: 6.2rem;
+  font-weight: 500;
+}
+
+.error {
+  font-size: 5.2rem;
+  font-weight: 500;
+  background-color: rgba(255, 255, 255, 0.8);
+  color: red;
+  border-radius: 10px;
+  padding: 4rem;
+}
+
 .gap {
   display: flex;
   flex-direction: column;
