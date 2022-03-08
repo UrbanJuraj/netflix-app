@@ -82,7 +82,7 @@ const HomePage = (props) => {
         {moviesContext.isSearched && (
           <div className={styles["searched-movies"]}>
             {moviesContext.movies.map((movie) => (
-              <SearchedMovie key={movie.id} movie={movie} />
+              <SearchedMovie key={movie.key} movie={movie} />
             ))}
           </div>
         )}
