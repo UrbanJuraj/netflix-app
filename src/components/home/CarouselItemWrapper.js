@@ -1,5 +1,6 @@
 import { useContext } from "react";
 import { useNavigate } from "react-router-dom";
+
 import MoviesContext from "../../store/movies-context";
 
 const CarouselItemWrapper = (props) => {

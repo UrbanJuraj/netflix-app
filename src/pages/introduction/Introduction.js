@@ -1,7 +1,8 @@
 import Card from "../../components/UI/card/Card";
+
 import styles from "./Introduction.module.css";
 
-const Introduction = (props) => {
+const Introduction = () => {
   return (
     <Card className={styles.intro}>
       <div className={styles.container}>

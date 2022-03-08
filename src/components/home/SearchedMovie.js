@@ -1,6 +1,8 @@
 import { useContext } from "react";
 import { useNavigate } from "react-router-dom";
+
 import MoviesContext from "../../store/movies-context";
+
 import styles from "./SearchedMovie.module.css";
 
 const SearchedMovie = (props) => {

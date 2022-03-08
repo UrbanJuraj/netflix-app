@@ -1,11 +1,14 @@
 import { useContext } from "react";
 import { Link } from "react-router-dom";
+
 import AuthContext from "../../store/auth-context";
 import MoviesContext from "../../store/movies-context";
+
 import Button from "../UI/button/Button";
+
 import styles from "./Navigation.module.css";
 
-const Navigation = (props) => {
+const Navigation = () => {
   const authContext = useContext(AuthContext);
   const moviesContext = useContext(MoviesContext);
 

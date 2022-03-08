@@ -2,12 +2,13 @@ import { useContext } from "react";
 import { Link } from "react-router-dom";
 
 import AuthContext from "../../store/auth-context";
+import MoviesContext from "../../store/movies-context";
+
 import Navigation from "./Navigation";
 
 import styles from "./Header.module.css";
-import MoviesContext from "../../store/movies-context";
 
-const Header = (props) => {
+const Header = () => {
   const authContext = useContext(AuthContext);
   const moviesContext = useContext(MoviesContext);
 

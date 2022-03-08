@@ -1,24 +1,23 @@
 import { useContext, useEffect, useState } from "react";
 import { Carousel } from "react-bootstrap";
 
+import MoviesContext from "../../store/movies-context";
+
+import SearchedMovie from "../../components/home/SearchedMovie";
+import CarouselItemWrapper from "../../components/home/CarouselItemWrapper";
 import SearchForm from "../../components/home/SearchForm";
 import Card from "../../components/UI/card/Card";
+
 import notFoundImg from "../../assets/not-found.png";
 
 import styles from "./HomePage.module.css";
-import MoviesContext from "../../store/movies-context";
-import SearchedMovie from "../../components/home/SearchedMovie";
-import { useNavigate } from "react-router-dom";
-import CarouselItemWrapper from "../../components/home/CarouselItemWrapper";
 
-const HomePage = (props) => {
+const HomePage = () => {
   const [isLoading, setIsLoading] = useState(true);
   const [error, setError] = useState();
   const [movies, setMovies] = useState([]);
 
   const moviesContext = useContext(MoviesContext);
-
-  const navigate = useNavigate();
 
   const randomPageNumber = Math.floor(Math.random() * 100) + 1;
 
@@ -54,6 +53,7 @@ const HomePage = (props) => {
       setIsLoading(false);
       setError(error.message);
     });
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   if (isLoading) {

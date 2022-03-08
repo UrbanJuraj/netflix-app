@@ -4,11 +4,12 @@ import { useNavigate } from "react-router-dom";
 import Button from "../../components/UI/button/Button";
 import Card from "../../components/UI/card/Card";
 import Input from "../../components/UI/input/Input";
+
 import AuthContext from "../../store/auth-context";
 
 import styles from "./LoginPage.module.css";
 
-const LoginPage = (props) => {
+const LoginPage = () => {
   const [error, setError] = useState();
 
   const navigate = useNavigate();

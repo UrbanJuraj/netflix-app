@@ -1,10 +1,13 @@
 import { Fragment, useContext, useRef, useState } from "react";
+
 import MoviesContext from "../../store/movies-context";
+
 import Button from "../UI/button/Button";
 import Input from "../UI/input/Input";
+
 import styles from "./SearchForm.module.css";
 
-const SearchForm = (props) => {
+const SearchForm = () => {
   const [error, setError] = useState();
 
   const searchInputRef = useRef();

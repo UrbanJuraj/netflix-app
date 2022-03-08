@@ -1,4 +1,5 @@
 import Card from "../../components/UI/card/Card";
+
 import notFoundImg from "../../assets/not-found.png";
 
 import styles from "./MoviePage.module.css";

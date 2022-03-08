@@ -2,12 +2,13 @@ import { Fragment, useContext } from "react";
 import { Routes, Route, Navigate } from "react-router-dom";
 
 import Header from "./components/header/Header";
-import HomePage from "./pages/home/HomePage";
-import LoginPage from "./pages/login/LoginPage";
 import Introduction from "./pages/introduction/Introduction";
-import NotFound from "./pages/notFound/NotFound";
-import AuthContext from "./store/auth-context";
+import LoginPage from "./pages/login/LoginPage";
+import HomePage from "./pages/home/HomePage";
 import MoviePage from "./pages/movie/MoviePage";
+import NotFound from "./pages/notFound/NotFound";
+
+import AuthContext from "./store/auth-context";
 import MoviesContext from "./store/movies-context";
 
 function App() {
