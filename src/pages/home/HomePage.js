@@ -2,19 +2,19 @@ import { useContext, useEffect, useState } from "react";
 import { Carousel } from "react-bootstrap";
 
 import SearchForm from "../../components/home/SearchForm";
-import Card from "../../components/UI/Card";
+import Card from "../../components/UI/card/Card";
 import notFoundImg from "../../assets/not-found.png";
 
 import styles from "./HomePage.module.css";
 import MoviesContext from "../../store/movies-context";
 import SearchedMovie from "../../components/home/SearchedMovie";
 import { useNavigate } from "react-router-dom";
+import CarouselItemWrapper from "../../components/home/CarouselItemWrapper";
 
 const HomePage = (props) => {
   const [isLoading, setIsLoading] = useState(true);
   const [error, setError] = useState();
   const [movies, setMovies] = useState([]);
-  // const [movie, setMovie] = useState({});
 
   const moviesContext = useContext(MoviesContext);
 
@@ -34,13 +34,15 @@ const HomePage = (props) => {
 
       const resData = await response.json();
 
-      let loadedMovies = [];
+      const loadedMovies = [];
 
       resData.results.map((movie) =>
         loadedMovies.push({
           key: movie.id,
           title: movie.title,
           image: movie.backdrop_path,
+          overview: movie.overview,
+          release: movie.release_date,
         })
       );
 
@@ -89,13 +91,15 @@ const HomePage = (props) => {
           <Carousel>
             {movies.map((movie) => (
               <Carousel.Item key={movie.key}>
-                <img
-                  src={movie.image ? imgHttp + movie.image : notFoundImg}
-                  alt="movie img"
-                />
-                <Carousel.Caption>
-                  <h1>{movie.title}</h1>
-                </Carousel.Caption>
+                <CarouselItemWrapper movie={movie}>
+                  <img
+                    src={movie.image ? imgHttp + movie.image : notFoundImg}
+                    alt="movie img"
+                  />
+                  <Carousel.Caption>
+                    <h1>{movie.title}</h1>
+                  </Carousel.Caption>
+                </CarouselItemWrapper>
               </Carousel.Item>
             ))}
           </Carousel>
