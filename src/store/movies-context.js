@@ -12,7 +12,9 @@ const MoviesContext = React.createContext({
 export const MoviesContextProvider = (props) => {
   const [isSearched, setIsSearched] = useState(false);
   const [movies, setMovies] = useState([]);
-  const [movie, setMovie] = useState({});
+
+  const storageVariable = JSON.parse(localStorage.getItem("movie"));
+  const [movie, setMovie] = useState(storageVariable);
 
   const addSearchedMoviesHandler = (movies) => {
     setIsSearched(true);
@@ -21,12 +23,14 @@ export const MoviesContextProvider = (props) => {
 
   const setChosenMovie = (movie) => {
     setMovie(movie);
+    localStorage.setItem("movie", JSON.stringify(movie));
   };
 
   const clearSearchedMovies = () => {
     setIsSearched(false);
     setMovies([]);
-    setMovie({});
+    setMovie();
+    localStorage.removeItem("movie");
   };
 
   const contextValue = {
