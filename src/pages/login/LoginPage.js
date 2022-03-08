@@ -24,9 +24,13 @@ const LoginPage = (props) => {
     const enteredEmail = emailInputRef.current.value;
     const enteredPassword = passwordInputRef.current.value;
 
+    // regular expression for email
     const validEmailExpression =
       /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
 
+    // user authentication
+    // user must write a valid email
+    // user must write password with at least 8 characters
     if (
       enteredEmail.match(validEmailExpression) &&
       enteredPassword.length > 7
