@@ -7,8 +7,9 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: transparent;
+  background-color: rgba(0, 0, 0, 0.4);
   padding: 0 4rem;
+  z-index: 2;
 }
 
 .logo {
