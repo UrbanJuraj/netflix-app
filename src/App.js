@@ -36,7 +36,7 @@ function App() {
           <Route
             path="movie"
             element={
-              moviesContext.isSearched ? (
+              moviesContext.movie ? (
                 <MoviePage movie={moviesContext.movie} />
               ) : (
                 <NotFound />
