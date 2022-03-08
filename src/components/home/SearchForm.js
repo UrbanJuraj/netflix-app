@@ -40,7 +40,9 @@ const SearchForm = (props) => {
           })
         );
 
-        moviesContext.addSearchedMovies(loadedMovies);
+        if (loadedMovies.length !== 0)
+          moviesContext.addSearchedMovies(loadedMovies);
+        else setError("No films Found!");
       };
 
       fetchData().catch((error) => {
