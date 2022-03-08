@@ -1,4 +1,4 @@
-import Card from "../../components/UI/Card";
+import Card from "../../components/UI/card/Card";
 import styles from "./Introduction.module.css";
 
 const Introduction = (props) => {

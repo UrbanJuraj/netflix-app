@@ -2,7 +2,7 @@ import { useContext, useRef } from "react";
 import { useNavigate } from "react-router-dom";
 
 import Button from "../../components/UI/button/Button";
-import Card from "../../components/UI/Card";
+import Card from "../../components/UI/card/Card";
 import Input from "../../components/UI/input/Input";
 import AuthContext from "../../store/auth-context";
 
