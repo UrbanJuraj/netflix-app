@@ -8,6 +8,7 @@ const Input = (props) => {
       placeholder={props.placeholder}
       id={props.id}
       ref={props.reference}
+      required
     />
   );
 };
