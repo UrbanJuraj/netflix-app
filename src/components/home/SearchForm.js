@@ -27,7 +27,20 @@ const SearchForm = (props) => {
         if (!response.ok) throw new Error("Something went wrong!");
 
         const resData = await response.json();
-        moviesContext.addMovies(resData.results);
+
+        const loadedMovies = [];
+
+        resData.results.map((movie) =>
+          loadedMovies.push({
+            key: movie.id,
+            title: movie.title,
+            image: movie.backdrop_path,
+            overview: movie.overview,
+            release: movie.release_date,
+          })
+        );
+
+        moviesContext.addSearchedMovies(loadedMovies);
       };
 
       fetchData().catch((error) => {
