@@ -42,7 +42,10 @@ const SearchForm = (props) => {
 
         if (loadedMovies.length !== 0)
           moviesContext.addSearchedMovies(loadedMovies);
-        else setError("No films Found!");
+        else {
+          moviesContext.clearMovies();
+          setError("No films Found!");
+        }
       };
 
       fetchData().catch((error) => {
