@@ -4,7 +4,7 @@
       rgba(0, 0, 0, 0.8),
       rgba(0, 0, 0, 0.6)
     ),
-    url("../../assets/introduction-img.jpg");
+    url("../../../assets/introduction-img.jpg");
   background-size: cover;
   background-position: center;
   width: 100%;
