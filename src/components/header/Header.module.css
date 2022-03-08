@@ -27,3 +27,23 @@
 .logo:active {
   color: red;
 }
+
+@media (max-width: 30rem) {
+  .main-header {
+    padding: 0 2rem;
+  }
+
+  .logo {
+    font-size: 3.6rem;
+  }
+}
+
+@media (max-width: 25rem) {
+  .main-header {
+    height: 6rem;
+  }
+
+  .logo {
+    font-size: 3rem;
+  }
+}
