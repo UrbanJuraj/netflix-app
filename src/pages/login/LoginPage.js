@@ -1,4 +1,4 @@
-import { useContext, useRef } from "react";
+import { useContext, useRef, useState } from "react";
 import { useNavigate } from "react-router-dom";
 
 import Button from "../../components/UI/button/Button";
@@ -9,6 +9,8 @@ import AuthContext from "../../store/auth-context";
 import styles from "./LoginPage.module.css";
 
 const LoginPage = (props) => {
+  const [error, setError] = useState();
+
   const navigate = useNavigate();
 
   const emailInputRef = useRef();
@@ -31,13 +33,14 @@ const LoginPage = (props) => {
     ) {
       authContext.login();
       navigate("/home");
-    } else console.log("chujovina");
+    } else setError("Invalid inputs!");
   };
 
   return (
     <Card>
       <div className={styles["login-form"]}>
         <h2>Sign in</h2>
+        <p className={styles.error}>{error}</p>
         <form onSubmit={submitFormHandler}>
           <div>
             <Input
