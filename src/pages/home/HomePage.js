@@ -8,7 +8,7 @@ import CarouselItemWrapper from "../../components/home/CarouselItemWrapper";
 import SearchForm from "../../components/home/SearchForm";
 import Card from "../../components/UI/card/Card";
 
-import notFoundImg from "../../assets/not-found.png";
+import notFoundImg from "../../assets/not-found.jpg";
 
 import styles from "./HomePage.module.css";
 
