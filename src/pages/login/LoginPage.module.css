@@ -36,3 +36,21 @@
   flex-direction: column;
   gap: 2rem;
 }
+
+@media (max-width: 30rem) {
+  .login-form {
+    padding: 4rem;
+    width: 30rem;
+  }
+
+  .login-form h2 {
+    font-size: 3.6rem;
+  }
+}
+
+@media (max-width: 22rem) {
+  .login-form {
+    padding: 2rem;
+    width: 25rem;
+  }
+}
