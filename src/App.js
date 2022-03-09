@@ -1,6 +1,7 @@
-import { Fragment, useContext } from "react";
+import { useContext } from "react";
 import { Routes, Route, Navigate } from "react-router-dom";
 
+import Layout from "./components/UI/layout/Layout";
 import Header from "./components/header/Header";
 import Introduction from "./pages/introduction/Introduction";
 import LoginPage from "./pages/login/LoginPage";
@@ -16,7 +17,7 @@ function App() {
   const moviesContext = useContext(MoviesContext);
 
   return (
-    <Fragment>
+    <Layout>
       <Header />
 
       <Routes>
@@ -57,7 +58,7 @@ function App() {
         )}
         <Route path="*" element={<NotFound />} />
       </Routes>
-    </Fragment>
+    </Layout>
   );
 }
 
