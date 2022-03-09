@@ -28,19 +28,78 @@
 }
 
 .carousel {
-  width: 100rem;
+  width: 150rem;
   overflow: hidden;
   border-radius: 10px;
   cursor: pointer;
 }
 
 .carousel img {
-  width: 100rem;
+  width: 100%;
 }
 
 .carousel h1 {
   font-size: 6.2rem;
   background-color: rgba(0, 0, 0, 0.4);
-  box-shadow: 0 2px 2px 2px rgba(0, 0, 0, 0.8);
+  box-shadow: 0 2px 2px 2px rgba(0, 0, 0, 0.6);
   border-radius: 10px;
+}
+
+@media (max-width: 125rem) {
+  .carousel {
+    width: 100rem;
+  }
+}
+
+@media (max-width: 100rem) {
+  .carousel {
+    width: 100rem;
+  }
+}
+
+@media (max-width: 75rem) {
+  .carousel {
+    width: 80rem;
+  }
+
+  .carousel h1 {
+    font-size: 5.2rem;
+  }
+}
+
+@media (max-width: 64rem) {
+  .carousel {
+    width: 60rem;
+  }
+
+  .carousel h1 {
+    font-size: 3.6rem;
+    border-radius: 5px;
+  }
+}
+
+@media (max-width: 44rem) {
+  .carousel {
+    width: 45rem;
+  }
+
+  .carousel h1 {
+    font-size: 2.4rem;
+  }
+}
+
+@media (max-width: 34rem) {
+  .carousel {
+    width: 35rem;
+  }
+}
+
+@media (max-width: 25rem) {
+  .carousel {
+    width: 28rem;
+  }
+
+  .carousel h1 {
+    font-size: 2rem;
+  }
 }
