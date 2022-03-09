@@ -39,7 +39,7 @@
 }
 
 .carousel h1 {
-  font-size: 6.2rem;
+  font-size: 5.2rem;
   background-color: rgba(0, 0, 0, 0.4);
   box-shadow: 0 2px 2px 2px rgba(0, 0, 0, 0.6);
   border-radius: 10px;
@@ -51,19 +51,9 @@
   }
 }
 
-@media (max-width: 100rem) {
-  .carousel {
-    width: 100rem;
-  }
-}
-
 @media (max-width: 75rem) {
   .carousel {
     width: 80rem;
-  }
-
-  .carousel h1 {
-    font-size: 5.2rem;
   }
 }
 
