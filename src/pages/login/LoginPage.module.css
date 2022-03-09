@@ -53,4 +53,18 @@
     padding: 2rem;
     width: 25rem;
   }
+
+  .login-form h2 {
+    text-align: center;
+  }
+}
+
+@media (max-width: 18rem) {
+  .login-form {
+    width: 20rem;
+  }
+
+  .login-form h2 {
+    font-size: 3rem;
+  }
 }

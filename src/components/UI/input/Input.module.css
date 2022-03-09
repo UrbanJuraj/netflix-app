@@ -4,3 +4,10 @@
   padding: 0.8rem;
   border-radius: 5px;
 }
+
+@media (max-width: 18rem) {
+  .input {
+    font-size: 1.6rem;
+    padding: 0.5rem;
+  }
+}
