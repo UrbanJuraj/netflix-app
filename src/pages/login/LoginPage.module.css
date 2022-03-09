@@ -61,7 +61,8 @@
 
 @media (max-width: 18rem) {
   .login-form {
-    width: 20rem;
+    width: 80%;
+    padding: 1rem;
   }
 
   .login-form h2 {
