@@ -51,5 +51,10 @@
 @media (max-width: 18rem) {
   .logo {
     font-size: 2.4rem;
+    font-weight: 500;
+  }
+
+  .main-header {
+    padding: 0 1rem;
   }
 }
