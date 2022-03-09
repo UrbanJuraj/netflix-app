@@ -64,12 +64,12 @@
 
 @media (max-width: 25rem) {
   .form {
-    width: 28rem;
+    width: 80%;
     flex-direction: column;
     gap: 1rem;
   }
 
   .error {
-    width: 28rem;
+    width: 80%;
   }
 }
