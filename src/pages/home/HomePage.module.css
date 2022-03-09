@@ -20,6 +20,7 @@
 }
 
 .searched-movies {
+  width: 150rem;
   display: flex;
   flex-direction: column;
   gap: 1rem;
@@ -49,10 +50,18 @@
   .carousel {
     width: 100rem;
   }
+
+  .searched-movies {
+    width: 100rem;
+  }
 }
 
 @media (max-width: 75rem) {
   .carousel {
+    width: 80rem;
+  }
+
+  .searched-movies {
     width: 80rem;
   }
 }
@@ -66,6 +75,10 @@
     font-size: 3.6rem;
     border-radius: 5px;
   }
+
+  .searched-movies {
+    width: 60rem;
+  }
 }
 
 @media (max-width: 44rem) {
@@ -76,10 +89,18 @@
   .carousel h1 {
     font-size: 2.4rem;
   }
+
+  .searched-movies {
+    width: 45rem;
+  }
 }
 
 @media (max-width: 34rem) {
   .carousel {
+    width: 35rem;
+  }
+
+  .searched-movies {
     width: 35rem;
   }
 }
@@ -91,5 +112,9 @@
 
   .carousel h1 {
     font-size: 2rem;
+  }
+
+  .searched-movies {
+    width: 80%;
   }
 }
