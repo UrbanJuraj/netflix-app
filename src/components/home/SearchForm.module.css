@@ -1,6 +1,6 @@
 .form {
   display: flex;
-  width: 50rem;
+  width: 75rem;
 }
 
 .form input {
@@ -10,14 +10,32 @@
 .error {
   background-color: rgba(255, 255, 255, 0.8);
   color: red;
-  font-size: 2rem;
+  font-size: 3rem;
   font-weight: 500;
   border-radius: 5px;
-  padding: 1rem 4rem;
+  padding: 2rem 0;
+  text-align: center;
+  width: 75rem;
+}
+
+@media (max-width: 125rem) {
+  .form {
+    width: 50rem;
+  }
+
+  .error {
+    font-size: 2rem;
+    padding: 1rem 0;
+    width: 50rem;
+  }
 }
 
 @media (max-width: 64rem) {
   .form {
+    width: 60rem;
+  }
+
+  .error {
     width: 60rem;
   }
 }
@@ -26,11 +44,21 @@
   .form {
     width: 45rem;
   }
+
+  .error {
+    width: 45rem;
+  }
 }
 
 @media (max-width: 34rem) {
   .form {
     width: 35rem;
+  }
+
+  .error {
+    padding: 0.75rem 0;
+    width: 35rem;
+    font-size: 1.8rem;
   }
 }
 
@@ -39,5 +67,9 @@
     width: 28rem;
     flex-direction: column;
     gap: 1rem;
+  }
+
+  .error {
+    width: 28rem;
   }
 }
