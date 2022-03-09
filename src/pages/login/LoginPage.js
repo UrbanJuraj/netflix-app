@@ -2,7 +2,6 @@ import { useContext, useRef, useState } from "react";
 import { useNavigate } from "react-router-dom";
 
 import Button from "../../components/UI/button/Button";
-import Card from "../../components/UI/card/Card";
 import Input from "../../components/UI/input/Input";
 
 import AuthContext from "../../store/auth-context";
@@ -42,29 +41,27 @@ const LoginPage = () => {
   };
 
   return (
-    <Card>
-      <div className={styles["login-form"]}>
-        <h2>Sign in</h2>
-        <p className={styles.error}>{error}</p>
-        <form onSubmit={submitFormHandler}>
-          <div>
-            <Input
-              type="email"
-              id="email"
-              placeholder="Email"
-              reference={emailInputRef}
-            />
-            <Input
-              type="text"
-              id="password"
-              reference={passwordInputRef}
-              placeholder="Password"
-            />
-          </div>
-          <Button title="Sign in" type="submit" />
-        </form>
-      </div>
-    </Card>
+    <div className={styles["login-form"]}>
+      <h2>Sign in</h2>
+      <p className={styles.error}>{error}</p>
+      <form onSubmit={submitFormHandler}>
+        <div>
+          <Input
+            type="email"
+            id="email"
+            placeholder="Email"
+            reference={emailInputRef}
+          />
+          <Input
+            type="text"
+            id="password"
+            reference={passwordInputRef}
+            placeholder="Password"
+          />
+        </div>
+        <Button title="Sign in" type="submit" />
+      </form>
+    </div>
   );
 };
 
