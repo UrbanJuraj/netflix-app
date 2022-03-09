@@ -84,13 +84,7 @@
 
 @media (max-width: 30rem) {
   .movie {
-    width: 30rem;
-  }
-}
-
-@media (max-width: 22rem) {
-  .movie {
-    width: 25rem;
+    width: 80%;
   }
 
   .description h1 {
