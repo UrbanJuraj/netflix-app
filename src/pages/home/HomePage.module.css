@@ -86,7 +86,7 @@
 
 @media (max-width: 25rem) {
   .carousel {
-    width: 28rem;
+    width: 80%;
   }
 
   .carousel h1 {
