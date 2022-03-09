@@ -1,5 +1,5 @@
 .searched-movie {
-  width: 150rem;
+  width: 100%;
   border-radius: 5px;
   background-color: rgba(0, 0, 0, 0.6);
   padding: 1rem 0 1rem 2rem;
@@ -11,55 +11,20 @@
 }
 
 @media (max-width: 125rem) {
-  .searched-movie {
-    width: 100rem;
-  }
-
   .searched-movie h2 {
     font-size: 2rem;
   }
 }
 
-@media (max-width: 100rem) {
-  .searched-movie {
-    width: 100rem;
-  }
-}
-
-@media (max-width: 75rem) {
-  .searched-movie {
-    width: 80rem;
-  }
-}
-
-@media (max-width: 64rem) {
-  .searched-movie {
-    width: 60rem;
-  }
-}
-
-@media (max-width: 44rem) {
-  .searched-movie {
-    width: 45rem;
-  }
-}
-
 @media (max-width: 34rem) {
-  .searched-movie {
-    width: 35rem;
-  }
-
   .searched-movie h2 {
     font-size: 1.8rem;
   }
 }
 
 @media (max-width: 25rem) {
-  .searched-movie {
-    width: 28rem;
-  }
-
   .searched-movie h2 {
     font-size: 1.6rem;
+    padding: 0.5rem;
   }
 }
