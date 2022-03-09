@@ -1,6 +1,6 @@
 .movie {
   max-width: 120rem;
-  background-color: black;
+  background-color: rgb(20, 20, 20);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -30,4 +30,74 @@
 .description p {
   font-size: 2rem;
   margin: 0;
+}
+
+@media (max-width: 88rem) {
+  .movie {
+    width: 100rem;
+  }
+
+  .description h1 {
+    font-size: 3.6rem;
+  }
+}
+
+@media (max-width: 75rem) {
+  .movie {
+    width: 80rem;
+  }
+
+  .description h1 {
+    font-size: 3rem;
+  }
+
+  .description p {
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 65rem) {
+  .movie {
+    width: 60rem;
+  }
+}
+
+@media (max-width: 50rem) {
+  .movie {
+    width: 50rem;
+  }
+}
+
+@media (max-width: 40rem) {
+  .movie {
+    width: 40rem;
+  }
+
+  .description {
+    padding: 2rem;
+  }
+
+  .description h1 {
+    font-size: 2.4rem;
+  }
+}
+
+@media (max-width: 30rem) {
+  .movie {
+    width: 30rem;
+  }
+}
+
+@media (max-width: 22rem) {
+  .movie {
+    width: 25rem;
+  }
+
+  .description h1 {
+    font-size: 2rem;
+  }
+
+  .description p {
+    font-size: 1.6rem;
+  }
 }
