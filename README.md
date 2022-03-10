@@ -4,13 +4,9 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Links
 
-You can see code on my [git hub](https://github.com/UrbanJuraj/netflix-app)
-
-For visit page click on this [link](https://netflix-clone-urban.netlify.app/)
+For visit page click on this [link](https://netflix-clone-urban.netlify.app/).
 
 ## Available Scripts
-
-In the project directory, you can run:
 
 ### `npm install`
 
