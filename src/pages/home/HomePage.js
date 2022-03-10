@@ -11,6 +11,13 @@ import notFoundImg from "../../assets/not-found.jpg";
 
 import styles from "./HomePage.module.css";
 
+function shuffle(array) {
+  for (let i = array.length - 1; i > 0; i--) {
+    let j = Math.floor(Math.random() * (i + 1));
+    [array[i], array[j]] = [array[j], array[i]];
+  }
+}
+
 const HomePage = () => {
   const [isLoading, setIsLoading] = useState(true);
   const [error, setError] = useState();
@@ -43,6 +50,8 @@ const HomePage = () => {
           release: movie.release_date,
         })
       );
+      shuffle(loadedMovies);
+      loadedMovies.splice(0, 10);
 
       setMovies(loadedMovies);
       setIsLoading(false);
