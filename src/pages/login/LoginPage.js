@@ -37,7 +37,9 @@ const LoginPage = () => {
     ) {
       authContext.login();
       navigate("/home");
-    } else setError("Invalid inputs!");
+    } else if (enteredPassword.length < 8)
+      setError("Password must be at least 8 characters long!");
+    else setError("Invalid email!");
   };
 
   return (
