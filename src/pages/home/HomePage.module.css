@@ -47,7 +47,7 @@
   border-radius: 10px;
 }
 
-@media (max-width: 125rem) {
+@media (max-width: 125em) {
   .carousel {
     width: 100rem;
   }
@@ -57,7 +57,7 @@
   }
 }
 
-@media (max-width: 75rem) {
+@media (max-width: 75em) {
   .carousel {
     width: 80rem;
   }
@@ -67,7 +67,7 @@
   }
 }
 
-@media (max-width: 64rem) {
+@media (max-width: 64em) {
   .carousel {
     width: 60rem;
   }
@@ -82,7 +82,7 @@
   }
 }
 
-@media (max-width: 44rem) {
+@media (max-width: 44em) {
   .carousel {
     width: 45rem;
   }
@@ -96,7 +96,7 @@
   }
 }
 
-@media (max-width: 34rem) {
+@media (max-width: 34em) {
   .carousel {
     width: 35rem;
   }
@@ -112,7 +112,7 @@
   }
 }
 
-@media (max-width: 25rem) {
+@media (max-width: 25em) {
   .carousel {
     width: 80%;
   }

@@ -5,7 +5,7 @@
   border-radius: 5px;
 }
 
-@media (max-width: 18rem) {
+@media (max-width: 18em) {
   .input {
     font-size: 1.6rem;
     padding: 0.5rem;

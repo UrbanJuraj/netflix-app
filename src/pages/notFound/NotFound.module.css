@@ -4,13 +4,13 @@
   color: #fff;
 }
 
-@media (max-width: 32rem) {
+@media (max-width: 32em) {
   .not-found {
     font-size: 4.4rem;
   }
 }
 
-@media (max-width: 23rem) {
+@media (max-width: 23em) {
   .not-found {
     font-size: 2.4rem;
   }

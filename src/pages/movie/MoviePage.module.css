@@ -32,7 +32,7 @@
   margin: 0;
 }
 
-@media (max-width: 88rem) {
+@media (max-width: 88em) {
   .movie {
     width: 100rem;
   }
@@ -42,7 +42,7 @@
   }
 }
 
-@media (max-width: 75rem) {
+@media (max-width: 75em) {
   .movie {
     width: 80rem;
   }
@@ -56,19 +56,19 @@
   }
 }
 
-@media (max-width: 65rem) {
+@media (max-width: 65em) {
   .movie {
     width: 60rem;
   }
 }
 
-@media (max-width: 50rem) {
+@media (max-width: 50em) {
   .movie {
     width: 50rem;
   }
 }
 
-@media (max-width: 40rem) {
+@media (max-width: 40em) {
   .movie {
     width: 40rem;
   }
@@ -82,7 +82,7 @@
   }
 }
 
-@media (max-width: 30rem) {
+@media (max-width: 30em) {
   .movie {
     width: 80%;
   }

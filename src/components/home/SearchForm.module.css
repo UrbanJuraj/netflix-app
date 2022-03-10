@@ -18,7 +18,7 @@
   width: 75rem;
 }
 
-@media (max-width: 125rem) {
+@media (max-width: 125em) {
   .form {
     width: 50rem;
   }
@@ -30,7 +30,7 @@
   }
 }
 
-@media (max-width: 64rem) {
+@media (max-width: 64em) {
   .form {
     width: 60rem;
   }
@@ -40,7 +40,7 @@
   }
 }
 
-@media (max-width: 44rem) {
+@media (max-width: 44em) {
   .form {
     width: 45rem;
   }
@@ -50,7 +50,7 @@
   }
 }
 
-@media (max-width: 34rem) {
+@media (max-width: 34em) {
   .form {
     width: 35rem;
   }
@@ -62,7 +62,7 @@
   }
 }
 
-@media (max-width: 25rem) {
+@media (max-width: 25em) {
   .form {
     width: 80%;
     flex-direction: column;
