@@ -105,6 +105,10 @@
     width: 35rem;
   }
 
+  .loading-movies {
+    font-size: 4.4rem;
+  }
+
   .error {
     padding: 2rem 1rem;
     width: 80%;
@@ -123,6 +127,10 @@
 
   .searched-movies {
     width: 80%;
+  }
+
+  .loading-movies {
+    font-size: 3rem;
   }
 
   .error {
